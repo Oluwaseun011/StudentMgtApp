@@ -8,6 +8,7 @@ namespace StudMgtApp.Context
 {
     public class StudContext
     {
+        public static string CurrentLoggedin = "";
         public static List<Guardian> guardians = new List<Guardian>();
         public static List<User> users = new List<User>();
         public static List<Student> students = new List<Student>();

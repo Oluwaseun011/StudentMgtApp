@@ -40,7 +40,8 @@ namespace StudMgtApp.Repositories.Implementations
 
         public string GetCurrentLoggedInUser()
         {
-            throw new NotImplementedException();
+            return StudContext.CurrentLoggedin;
+
         }
 
         public int GetNextId()

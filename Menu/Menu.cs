@@ -13,25 +13,45 @@ namespace StudentMgtApp.Menu
             string option = Console.ReadLine()!;
 
             if (option == "1")
-            {
-                Console.Write("Input Name : ");
-                string name = Console.ReadLine()!;
+            {   
                 
+                Console.Write("Input Firstname : ");
+                string name = Console.ReadLine()!;
+
+                Console.Write("Input Firstname : ");
+                string lastName = Console.ReadLine()!;
+                
+                Console.Write("Address : ");
+                string address = Console.ReadLine()!;
+
+                Console.Write("Phone : ");
+                string phone = Console.ReadLine()!;
+
+                Console.Write("Email : ");
+                string email = Console.ReadLine()!;
+                
+                Console.Write("Password : ");
+                string password = Console.ReadLine()!;
             }
 
             else if (option == "2")
             {
+                Console.Write("Email : ");
+                string email = Console.ReadLine()!;
                 
+                Console.Write("Password : ");
+                string password = Console.ReadLine()!;
             }
 
             else if (option == "3")
             {
-                
+                Console.WriteLine("Thanks !");
             }
 
             else
             {
-                
+                Console.WriteLine("Invalid Input !");
+                Run();
             }
         }
     }

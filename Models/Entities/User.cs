@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace StudentMgtApp.Menu
+namespace StudentMgtApp.Models.Entities
 {
-    public class User
+     public class User
     {
         public int Id { get; set; }
         public string Email { get; set; } = default!;

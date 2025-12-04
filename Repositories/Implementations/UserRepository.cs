@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using StudentMgtApp.Models.Entities;
 using StudentMgtApp.Repositories.Interfaces;
 using StudMgtApp.Context;
+using StudMgtApp.Models.Enums;
 
 namespace StudMgtApp.Repositories.Implementations
 {
@@ -13,6 +14,11 @@ namespace StudMgtApp.Repositories.Implementations
         public void Add(User user)
         {
             StudContext.users.Add(user);
+        }
+
+        public void AddCurrentUserToDb(string email)
+        {
+            StudContext.CurrentLoggedin = email;
         }
 
         public User? GetByEmail(string email)
@@ -30,6 +36,11 @@ namespace StudMgtApp.Repositories.Implementations
         public User? GetById(int id)
         {
             return StudContext.users.Find(a => a.Id == id);
+        }
+
+        public string GetCurrentLoggedInUser()
+        {
+            throw new NotImplementedException();
         }
 
         public int GetNextId()

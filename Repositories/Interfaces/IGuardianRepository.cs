@@ -1,10 +1,9 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace StudMgtApp.Services.Interfaces
+namespace StudMgtApp.Repositories.Interfaces
 {
     public interface IGuardianRepository
     {
@@ -12,6 +11,5 @@ namespace StudMgtApp.Services.Interfaces
         void AddToDb(Guardian guardian);
         Guardian? GetGuardian(int id);
         ICollection<Guardian> GetGuardians();
-
     }
 }

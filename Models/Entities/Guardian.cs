@@ -3,14 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace StudentMgtApp
+namespace StudentMgtApp.Models.Entities
 {
     public class Guardian
     {
-
-
-    
-        public int Id{get;set;}
+         public int Id{get;set;}
         public string Email{get;set;} = default!;
         public string Address{get;set;} = default!;
         public string PhoneNumber{get;set;} = default!;

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using StudentMgtApp.Models.Entities;
 using StudentMgtApp.Repositories.Interfaces;
 using StudMgtApp.Context;
+using StudMgtApp.Models.Enums;
 
 namespace StudMgtApp.Repositories.Implementations
 {
@@ -17,7 +18,7 @@ namespace StudMgtApp.Repositories.Implementations
 
         public void AddCurrentUserToDb(string email)
         {
-            throw new NotImplementedException();
+            StudContext.CurrentLoggedin = email;
         }
 
         public User? GetByEmail(string email)
@@ -40,6 +41,7 @@ namespace StudMgtApp.Repositories.Implementations
         public string GetCurrentLoggedInUser()
         {
             return StudContext.CurrentLoggedin;
+
         }
 
         public int GetNextId()

@@ -11,9 +11,8 @@ namespace StudentMgtApp.Dtos
          public int GuardianId{ get; set; }
         public string Name{ get; set; } = default!;
         public int Age{get; set; }
-        public string Class{ get; set; } = default!;
-
-        public record RegisterStudentRequest(string Name, string Class, int age);
-        public record RegisterStudentResponse(int Id, string Name);
+        public string Class{ get; set; } = default!;   
     }
+    public record RegisterStudentRequest(string Name, string Class, int age);
+    public record RegisterStudentResponse(int Id, string Name);
 }

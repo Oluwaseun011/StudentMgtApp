@@ -13,5 +13,6 @@ namespace StudentMgtApp.Repositories.Interfaces
         User? GetById(int id);
         int GetNextId();
         List<User> GetUsers();
+        string GetCurrentLoggedInUser();
     }
 }

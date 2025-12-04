@@ -15,6 +15,11 @@ namespace StudMgtApp.Repositories.Implementations
             StudContext.users.Add(user);
         }
 
+        public void AddCurrentUserToDb(string email)
+        {
+            throw new NotImplementedException();
+        }
+
         public User? GetByEmail(string email)
         {
             foreach (var item in StudContext.users)
@@ -30,6 +35,11 @@ namespace StudMgtApp.Repositories.Implementations
         public User? GetById(int id)
         {
             return StudContext.users.Find(a => a.Id == id);
+        }
+
+        public string GetCurrentLoggedInUser()
+        {
+            return StudContext.CurrentLoggedin;
         }
 
         public int GetNextId()

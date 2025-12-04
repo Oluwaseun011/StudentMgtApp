@@ -14,5 +14,6 @@ namespace StudentMgtApp.Repositories.Interfaces
         int GetNextId();
         List<User> GetUsers();
         string GetCurrentLoggedInUser();
+        void AddCurrentUserToDb(string email);
     }
 }

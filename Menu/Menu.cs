@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace StudentMgtApp
+namespace StudentMgtApp.Menu
 {
     public class Menu
     {
-        public void Run()
+                public void Run()
         {
             Console.WriteLine("1. Register as a guidian\n2. Login\n3. Leave\nChoose : ");
             string option = Console.ReadLine()!;
